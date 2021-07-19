@@ -5,6 +5,7 @@ alias dv='docker volume ls -q'
 alias dstats='docker stats --format "table {{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}"'
 alias ctop='docker run --rm -ti --name=ctop --volume /var/run/docker.sock:/var/run/docker.sock:ro quay.io/vektorlab/ctop:latest'
 alias apprise='docker run caronc/apprise:latest apprise "$@"'
+alias k='kubernetes'
 
 # Functions
 dbash() { docker exec -it $1 bash; }
